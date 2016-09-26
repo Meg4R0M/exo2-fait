@@ -114,7 +114,7 @@ section span{
 .flex-container { /* Utilisation de FlexBox */
     display: -webkit-flex; 
     display: flex;
-    width: 70%;
+    width: 80%;
 	margin: auto;
     height: 450px;
 }
