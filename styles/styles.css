@@ -34,7 +34,7 @@ header img {
 	width: 110px;
 }
 header img:hover {
-	-webkit-transform: rotateZ(-90deg); /* Safari */
+	-webkit-transform: rotateZ(-90deg); /* Rotation 90° */
     transform: rotateZ(-90deg);
 }
 nav {
@@ -51,7 +51,7 @@ nav li {
 	display : inline;
 	padding : 0 1em 0 0.5em; /* Pour espacer les boutons entre eux */
 	font-size: 14px;
-	-webkit-transition: all 0.5s;
+	-webkit-transition: all 0.5s; /* animation pour le border bottom */
     transition: all 0.5s;
 }
 
@@ -80,7 +80,7 @@ h1 span {
 	font-weight: bold;
 	border: 1px solid white;
 	padding: 15px 5% 15px 5%;
-	text-shadow: 0 0 3px #000;
+	text-shadow: 0 0 3px #000; /* Effet sur le texte */
 }
 /*************************** BLOCS & CONTENEUR ********************/
 section{
@@ -101,7 +101,7 @@ section img{
 
 h2 {
 	margin-left: 40%;
-	text-shadow: 0 0 3px #FFFF00, 0 0 5px #FFF;
+	text-shadow: 0 0 3px #FFFF00, 0 0 5px #FFF; /* Double effet de texte */
 }
 
 section span{
@@ -111,8 +111,8 @@ section span{
 	font-size: 18px;
 }
 /*************************** CHAQUES DiV ********************/
-.flex-container {
-    display: -webkit-flex;
+.flex-container { /* Utilisation de FlexBox */
+    display: -webkit-flex; 
     display: flex;
     width: 60%;
 	margin: auto;
@@ -127,9 +127,9 @@ section span{
 	padding: 20px 20px 20px 20px;
 	text-align: center;
 	border-radius: 5px;
-	-webkit-transition: all 1s;
+	-webkit-transition: all 1s; /* Animation du :hover */
     transition: all 1s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Décoration de la box */
 }
 
 .flex-item:hover {
@@ -177,7 +177,7 @@ footer .copyright{
     position: absolute;
     bottom: 10px;
 	margin-left: -70px;
-	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; /* Décoration du texte */
 }
 /*************************** OUTiLS ********************/
 .clear {
