@@ -14,6 +14,7 @@ body {
 	color: #000;
 	background-image: url("../img/bg.jpg");
 	background-attachment:fixed;
+	
 	font-family: "Ubuntu";
 }
 
@@ -24,14 +25,18 @@ main {
 /********************************* HEADER *************************/
 header {
 	position: fixed;
-	height: 120px;
+	height: 160px;
 	width: 100%;
 	background-color: white;
 	border-bottom: 7px solid #E01045;
 	text-align: center;
 }
 header img {
-	width: 70px;
+	width: 110px;
+}
+header img:hover {
+	-webkit-transform: rotateZ(-90deg); /* Safari */
+    transform: rotateZ(-90deg);
 }
 nav {
 	text-align: center;
@@ -45,12 +50,18 @@ nav a{
 
 nav li {
 	display : inline;
-	padding : 0 0.5em; /* Pour espacer les boutons entre eux */
-	font-size: 12px;
+	padding : 0 1em 0 0.5em; /* Pour espacer les boutons entre eux */
+	font-size: 14px;
+	-webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+nav li:hover {
+	border-bottom: 4px solid #E01045;
 }
 
 nav li:nth-of-type(1),li:nth-of-type(2),li:nth-of-type(3),li:nth-of-type(4){/* selection des enfants voulus */
-	border-right: 2px solid #000;
+	border-right: 2px solid #E3E3E3;
 }
 
 nav ul {
@@ -68,7 +79,8 @@ h1 span {
 	font-size: 18px;
 	font-weight: bold;
 	border: 1px solid white;
-	padding: 10px 5% 10px 5%;
+	padding: 15px 5% 15px 5%;
+	text-shadow: 0 0 3px #000;
 }
 /*************************** BLOCS & CONTENEUR ********************/
 section{
@@ -91,6 +103,7 @@ section img{
 h2 {
 	margin-bottom: 50px;
 	margin-left: 40%;
+	text-shadow: 0 0 3px #FFFF00, 0 0 5px #FFF;
 }
 
 section span{
@@ -99,7 +112,7 @@ section span{
 	font-weight: bold;
 	font-size: 18px;
 }
-
+/*************************** CHAQUES DiV ********************/
 .left {
 	float:left;
 	width:300px;
@@ -109,6 +122,9 @@ section span{
 	padding: 20px 20px 20px 20px;
 	text-align: justify;
 	border-radius: 5px;
+	-webkit-transition: all 1s;
+    transition: all 1s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left:hover {
@@ -124,6 +140,9 @@ section span{
 	padding: 20px 20px 20px 20px;
 	text-align: justify;
 	border-radius: 5px;
+	-webkit-transition: all 0.5s;
+    transition: all 1s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .right:hover {
@@ -139,6 +158,9 @@ section span{
 	padding: 20px 20px 20px 20px;
 	text-align: justify;
 	border-radius: 5px;
+	-webkit-transition: all 0.5s;
+    transition: all 1s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .center:hover {
@@ -157,22 +179,38 @@ footer{
 	width: 100px;
 	margin-right: 25px;
 	vertical-align: top;
-	margin-bottom: 150px;
+
 }
 
 .logo img:nth-child(1){
 	margin-top: 10px;
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.logo img:nth-child(1):hover{
+	width:120px;
 }
 
 .logo img:nth-child(2){
 	width: 130px;
 	padding-top: 20px;
+	-webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.logo img:nth-child(2):hover{
+	width:150px;
 }
 
 footer .copyright{
 	color: white;
+    position: absolute;
+    bottom: 10px;
+	margin-left: -70px;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-
+/*************************** OUTiLS ********************/
 .clear {
 	clear:both;
 }
