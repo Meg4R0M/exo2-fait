@@ -115,7 +115,7 @@ section span{
     display: -webkit-flex; 
     display: flex;
     width: 80%;
-	margin: auto;
+	margin-left: 20%;
     height: 450px;
 }
 
