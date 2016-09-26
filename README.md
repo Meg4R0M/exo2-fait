@@ -1,3 +1,3 @@
-# Exo2-Css
-Exercice d'intégration :
-Reproduire la maquette en s'inspirant des vues 1 et 2 dans le dossier img
+# Exo-2-Fait
+
+Voici [Mon exercice](https://htmlpreview.github.io/?https://github.com/psykoterro/exo2-fait/blob/master/index.html) J'ai utilisé ce que je connaissais...
